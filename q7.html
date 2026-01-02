@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7</title>
+</head>
+<body>
+<!-- Write a program that calculates the discount based on the total purchase amount:
+a. If the amount is greater than $500, apply a 20% discount.
+b. If the amount is between $200 and $500, apply a 10% discount.
+c. If the amount is less than $200, no discount is applied.
+d. Print the discounted amount and the amount saved. -->
+    <script>
+
+        let totalAmount=Number(prompt("Enter the total net amount:"))
+        let discount
+        let savedAmount
+        if(totalAmount>=500){
+            discount=totalAmount*0.2
+            savedAmount=totalAmount-discount
+            document.write(`Total amount is $${totalAmount}, After 20% discount total price is $${savedAmount}`)
+        }else if(totalAmount>=200 && totalAmount<500){
+             discount=totalAmount*0.1
+            savedAmount=totalAmount-discount
+            document.write(`Total amount is $${totalAmount}, After 10% discount total price is $${savedAmount}`)
+        }
+        else{
+            document.write(`Total amount is $${totalAmount}, After 0% discount total price is $${savedAmount}`)
+        }
+
+    </script>
+    
+</body>
+</html>
