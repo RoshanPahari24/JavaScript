@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6</title>
+</head>
+<body>
+    <!-- Use if, elif, and else to handle each operator and print the result. If the operator is not
+recognized, print "Invalid operator." -->
+
+<script>
+    let operator = (prompt("Choose any opeartor (+,-,*,/)"))
+    let n1 = Number(prompt("Enter the first value:"))
+    let n2 = Number(prompt("Enter the second value:"))
+    let result = 0
+    if (operator == '+'){
+        result = n1 + n2
+        document.write(`Addition:${result}`)
+    }else if (operator == '-'){
+        result = n1 - n2
+        document.write(`Subtraction:${result}`)  
+    }
+    else if (operator == '*'){
+        result = n1 * n2
+        document.write(`Multiplication:${result}`)  
+    }
+    else{
+        result = n1 / n2
+        document.write(`Divide:${result}`)  
+    }
+</script>
+    
+</body>
+</html>
