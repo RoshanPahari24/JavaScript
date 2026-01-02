@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+</head>
+<body>
+    <script>
+//Write a program that takes a student's score (out of 100) as input and prints:
+// a. "A" if the score is 90 or above,
+// b. "B" if the score is between 80 and 89,
+// c. "C" if the score is between 70 and 79,
+// d. "D" if the score is between 60 and 69,
+// e. "F" if the score is below 60.
+
+
+let score = Number(prompt("Enter your score out of 100:"))
+if (score >= 90) {
+    document.write(`You have scored A `)
+}
+else if (score >= 80 && score <= 89) {
+    document.write(`You have scored B`)
+}
+else if (score >= 70 && score <= 79) {
+    document.write(`You have scored C`)
+}
+else if (score >= 60 && score <= 69) {
+    document.write(`Your have scored D`)
+}
+else {
+    document.write(`You have scored F `)
+}
+
+
+    </script>
+</body>
+</html>
