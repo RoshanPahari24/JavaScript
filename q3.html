@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+</head>
+<body>
+    <script>
+// Write a program that calculates the Body Mass Index (BMI) and categorizes it. Input the
+// weight (kg) and height (m), then use the formula
+// BMI= weight / (height*height) (kg/m2)
+// a. Print:
+// i. "Underweight" if BMI is less than 18.5,
+// ii. "Normal weight" if BMI is between 18.5 and 24.9,
+// iii. "Overweight" if BMI is between 25 and 29.9,
+// iv. "Obesity" if BMI is 30 or above.
+ 
+let weight = Number(prompt("Enter you weight in (kg)"))
+let height = Number(prompt("Enter you height in (m)"))
+BMI = weight / (height*height)
+if (BMI<18.5){
+    document.write(`you are underweight and your BMI is ${BMI.toFixed(2)}`)
+}else if(BMI >= 18.5 && BMI <= 24.9){
+    document.write(`you are normalweight and your BMI is ${BMI.toFixed(2)}`)
+}
+else if(BMI >= 25 && BMI <= 29.5){
+    document.write(`you are overweight and your BMI is ${BMI.toFixed(2)}`)
+}
+else {
+    document.write(`you are obesity and your BMI is ${BMI.toFixed(2)}`)
+}
+
+
+
+    </script>
+</body>
+</html>
